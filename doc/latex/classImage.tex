@@ -1,0 +1,67 @@
+\hypertarget{classImage}{}\doxysection{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image}} ()
+\item 
+\mbox{\Hypertarget{classImage_aa6de304bae99d32e8c46e275f5fe6b30}\label{classImage_aa6de304bae99d32e8c46e275f5fe6b30}} 
+{\bfseries Image} (unsigned int DimensionX, unsigned int DimensionY)
+\item 
+\mbox{\hyperlink{classPixel}{Pixel}} \mbox{\hyperlink{classImage_a72072c246feffa28c40241bca87b4e52}{get\+Pix}} (const int x, const int y) const
+\item 
+void \mbox{\hyperlink{classImage_ab039a3d76089102623e69d84d9884c68}{set\+Pix}} (int x, int y, \mbox{\hyperlink{classPixel}{Pixel}} Nv)
+\item 
+void \mbox{\hyperlink{classImage_a148968bbdb8dad918dd1701f16711fb2}{dessiner\+Rectangle}} (int Xmin, int Ymin, int Xmax, int Ymax, \mbox{\hyperlink{classPixel}{Pixel}} couleur) const
+\item 
+void \mbox{\hyperlink{classImage_ae95be938c2c17df84539fff657116da8}{effacer}} (\mbox{\hyperlink{classPixel}{Pixel}} fond) const
+\item 
+void \mbox{\hyperlink{classImage_a54d5231df55020822eb9e08c0f10de75}{test\+Regression}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Description\+: Constructeur par defaut et, init Arguments \+: x and y dimensions of the image Return Type\+: \mbox{\hyperlink{classImage}{Image}} class object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImage_a148968bbdb8dad918dd1701f16711fb2}\label{classImage_a148968bbdb8dad918dd1701f16711fb2}} 
+\index{Image@{Image}!dessinerRectangle@{dessinerRectangle}}
+\index{dessinerRectangle@{dessinerRectangle}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{dessinerRectangle()}{dessinerRectangle()}}
+{\footnotesize\ttfamily void Image\+::dessiner\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{Xmin,  }\item[{int}]{Ymin,  }\item[{int}]{Xmax,  }\item[{int}]{Ymax,  }\item[{\mbox{\hyperlink{classPixel}{Pixel}}}]{couleur }\end{DoxyParamCaption}) const}
+
+Description\+: Dessine un rectangle plein de la couleur donnée Arguments \+: x1,x2 and y1, y2 coordinates, color to fill with Return Type\+: void \mbox{\Hypertarget{classImage_ae95be938c2c17df84539fff657116da8}\label{classImage_ae95be938c2c17df84539fff657116da8}} 
+\index{Image@{Image}!effacer@{effacer}}
+\index{effacer@{effacer}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{effacer()}{effacer()}}
+{\footnotesize\ttfamily void Image\+::effacer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPixel}{Pixel}}}]{fond }\end{DoxyParamCaption}) const}
+
+Description\+: Efface le canevas en remplissant avec la couleur donnée Arguments \+: \mbox{\hyperlink{classPixel}{Pixel}} object as color argument Return Type\+: void \mbox{\Hypertarget{classImage_a72072c246feffa28c40241bca87b4e52}\label{classImage_a72072c246feffa28c40241bca87b4e52}} 
+\index{Image@{Image}!getPix@{getPix}}
+\index{getPix@{getPix}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{getPix()}{getPix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPixel}{Pixel}} Image\+::get\+Pix (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption}) const}
+
+Description\+: accesseurs\+: getters Arguments \+: x and y coordinates Return Type\+: \mbox{\hyperlink{classPixel}{Pixel}} object \mbox{\Hypertarget{classImage_ab039a3d76089102623e69d84d9884c68}\label{classImage_ab039a3d76089102623e69d84d9884c68}} 
+\index{Image@{Image}!setPix@{setPix}}
+\index{setPix@{setPix}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{setPix()}{setPix()}}
+{\footnotesize\ttfamily void Image\+::set\+Pix (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{classPixel}{Pixel}}}]{Nv }\end{DoxyParamCaption})}
+
+Description\+: mutateur\+: setters Arguments \+: x and y coordinates, \char`\"{}nouveau\char`\"{} pixel, new color Return Type\+: void \mbox{\Hypertarget{classImage_a54d5231df55020822eb9e08c0f10de75}\label{classImage_a54d5231df55020822eb9e08c0f10de75}} 
+\index{Image@{Image}!testRegression@{testRegression}}
+\index{testRegression@{testRegression}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{testRegression()}{testRegression()}}
+{\footnotesize\ttfamily void Image\+::test\+Regression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Description\+: tests the module, and its features Arguments \+: void Return Type\+: void 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/\+Travail/\+T\+D\+\_\+\+Module\+Image/src/Image.\+h\end{DoxyCompactItemize}
