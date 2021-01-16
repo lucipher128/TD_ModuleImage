@@ -2,23 +2,14 @@
 #define IMAGE_H
 
 #include <cstdint>
-#define W__VECTOR__        //delete this line to run without vector implementation
 
 #include <iostream>
-
-#ifdef W__VECTOR__
-#include <vector>
-#endif
-
 #include "Pixel.h"
 
 class Image {
    private:
-   Pixel** tab;  // Tableau dynamique de Pixel formant une image
+   Pixel* tab;  // Tableau dynamique de Pixel formant une image
    // avec vectror ou sans, definir la macro W__VECTOR__ pour with vectror
-#ifdef W__VECTOR__
-   std::vector<std::vector<Pixel>> v_tab;
-#endif
 
    unsigned int dimx;  // Dimension x de l'image
    unsigned int dimy;  // dimension y de l'image
@@ -30,9 +21,7 @@ class Image {
     * Return Type:      Image class object
     * */
    Image();
-#ifndef W__VECTOR__
    Image(unsigned int DimensionX, unsigned int DimensionY);
-#endif
    virtual ~Image();
 
    /**
